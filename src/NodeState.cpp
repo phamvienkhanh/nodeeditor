@@ -136,3 +136,13 @@ resizing() const
 {
   return _resizing;
 }
+
+void
+NodeState::
+resizeConnectSet(PortType portType, uint newSize)
+{
+  if (portType == PortType::In)
+    _inConnections.resize(newSize);
+  else
+    _outConnections.resize(newSize);
+}

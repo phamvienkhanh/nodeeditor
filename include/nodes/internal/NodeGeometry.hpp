@@ -61,8 +61,14 @@ public:
   unsigned int
   nSources() const;
 
+  void
+  setnSources(unsigned int sources) { _nSources = sources; }
+
   unsigned int
   nSinks() const;
+
+  void
+  setnSinks(unsigned int sinks) { _nSinks = sinks; }
 
   QPointF const&
   draggingPos() const
